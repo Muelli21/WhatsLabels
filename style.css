@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --background: rgb(255, 255, 255);
+    --primary: rgba(243, 243, 243, 0.89);
+    --secondary: rgb(223, 223, 223);
+
+    --light_yellow: #fdebb8;
+    --dark_yellow: #ffcaa7;
+
+    --light_red: #FF9E9E;
+    --dark_red: #FF7B7B;
+
+    --light_blue: #C1E6F2;
+    --dark_blue: #8AD8F1;
+
+    --label_0: rgb(255, 206, 206);
+    --label_1: rgb(221, 255, 247); 
+}
+
+body {
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+#content {
+
+    width: 100vw; 
+    height: 100vh; 
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    background-color: var(--background);
+}
+
+#data {
+    width: 50vw;
+    max-width: 400px; 
+    height: 45vh; 
+
+    text-align: center;
+    
+    background-color: var(--primary);
+
+    padding: 20px; 
+    margin: 50px;
+    border-radius: 10px;
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#input {
+    width: 50vw;
+    height: auto; 
+
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 15px; 
+}
+
+.button {
+    height: 50px; 
+    padding: 10px; 
+
+    background-color: var(--secondary);
+
+    border-radius: 10px;
+    border-color: var(--secondary);
+    border-style: solid;
+    border-width: 1px;
+
+    flex-grow: 1;
+    display: none; 
+}
+
+.button:hover {
+    background-color: white;
+    transition: 0.3s;
+}
+
+#file_upload {
+    display: none; 
+}
+
+#file_label {
+    width: 200px; 
+
+    margin: 20px;
+    padding: 10px;
+
+    background-color: var(--background);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#file_label:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.message {
+    color: rgb(255, 255, 255);
+    display: none;
+    text-align: left;
+    border-radius: 10px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    margin: 5px; 
+    max-width: 40vw; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.timestamp_paragraph {
+    font-size: 10px;
+}
+
+.message_paragraph {
+    font-size: 13px;
+    overflow-x: hidden;
+}
+
+.first {
+    align-self: flex-end;
+    background-color: rgba(7, 94, 84, 0.9);
+}
+
+.second {
+    align-self: flex-start;
+    background-color: rgba(18, 140, 126, 0.9);
+}
+
+#output_button {
+    width: 50vw; 
+}

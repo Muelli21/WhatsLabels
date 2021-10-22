@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- IOS PWA compatibility -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="./Resources/Icon.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Loading CSS scripts -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Loading the necessary scripts -->
+    <script src="index.js"></script>
+    <script src="elementUtils.js"></script>
+    <script src="papaparse.js"></script>
+
+    <title>Labeling Tool</title>
+</head>
+<body>
+    <div id = "progress_bar">
+
+    </div>
+    <div id = "content">
+        <div id = "data">
+            <div class = "message" id = "message_1"></div>
+            <div class = "message" id = "message_2"></div>
+            <div class = "message" id = "message_3"></div>
+
+            <input type="file" id="file_upload" accept=".csv" onchange="handleFiles(this.files)">
+            <label id="file_label" for="file_upload">
+                UPLOAD
+            </label>
+
+        </div>
+        <div id = "input">
+            <button class = "button control_button" id = "back_button" onclick="showPreviousMessage()">
+                Back
+            </button>
+            <button class = "button label_button" id = "label_0" onclick="labelAs0()">
+                Label as 0
+            </button>
+            <button class = "button label_button" id = "label_1" onclick="labelAs1()">
+                Label as 1
+            </button>
+        </div>
+        <div id = "output">
+            <button class = "button" id = "output_button" onclick="download()">
+                Download file
+            </button>
+        </div>
+    </div>
+</body>
+</html>
